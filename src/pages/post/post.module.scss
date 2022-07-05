@@ -1,0 +1,102 @@
+.bannerContainer {
+    width: 100%;
+    height: 400px;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.contentContainer {
+    header {
+        margin-top: 5rem;
+
+        h1 {
+            font-size: 3rem;
+            line-height: 3.625rem;
+        }
+
+        time {
+            text-transform: capitalize;
+        }
+
+        time, span {
+            font-size: .875rem;
+            line-height: 1.0625rem;
+            margin-left: .5rem;
+            color: var(--gray-150);
+        }
+
+        .headerContainer {
+            display: flex;
+            margin-top: 1.5rem;
+
+            div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                time, span {
+                    margin-left: .5rem;
+                }
+            }
+
+            div + div {
+                margin-left: 1.5rem;
+            }
+        }
+
+    }
+
+    article {
+        margin-top: 4rem;
+    }
+}
+
+.bodyContent {
+
+    section {
+
+        h2 {
+            font-size: 2.25rem;
+            line-height: 3.125rem;
+            font-weight: 700;
+            color: var(--gray-50);
+            margin-bottom: 3rem;
+        }
+
+        div {
+
+            p {
+                color: var(--gray-100);
+                font-size: 1.125rem;
+                line-height: 1.7rem;
+                font-weight: normal;
+
+                & + p {
+                    margin-top: 2rem;
+                }
+            }
+
+            a {
+                text-decoration: none;
+                cursor: pointer;
+                color: var(--pink-50);
+                transition: filter .2s ease-in-out;
+
+                &:hover {
+                    filter: brightness(.6);
+                }
+            }
+        }
+
+        & + section {
+            margin-top: 4rem;
+        }
+
+        &:last-child {
+            margin-bottom: 5rem;
+        }
+    }
+}
